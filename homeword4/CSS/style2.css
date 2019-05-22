@@ -1,0 +1,23 @@
+.rol1{
+	float: left;
+	margin-left: 50px;
+	width: 150px;
+}
+.rol2{
+	float: left;
+	margin-left: 50px;
+	margin-top:10px;
+	
+}
+ 
+.public{
+	max-width: 900px;
+	height:150px;
+	margin: auto; 
+	background: #E0F8EC;
+}
+
+
+.ub:hover{
+	color: red;
+}
