@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#header1{
+	
+
+}
+#s1{
+	 background-color:red;
+ 	text-indent: 10%;
+ 	color:white;
+ 	height: 70px;
+
+}
+
+#table{
+	 widows:100%;
+	 height: 40px;
+	 background-color: #770000;
+	height:30px;
+	padding-left:10%;
+
+}	
+ #tinc #table li{
+
+	
+	list-style: none;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	 line-height: 20px;
+	border-right: 1px solid #FFF;
+	position: relative;	
+
+}
+#table li a{
+	color:white;
+	text-decoration: none;
+}
+#quangcao{
+	background: gray;
+	height: 140px;
+}
+#mainm{
+	padding-left:10%;
+}
+#a1{
+	width: 30%;
+	float: left;
+}
+#a2{
+	width: 70%;
+}

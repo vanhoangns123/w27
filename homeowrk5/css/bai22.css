@@ -19,26 +19,17 @@
 	text-decoration: none;
 }
 #menu li:hover a{
-	color: red;
+	color: green;
 }
 #menu li:hover{
 	cursor: pointer;
 	background-color: #ccc;
 }
-#submenu{
-	display: none;
-}
+
 #menu li:hover #submenu{
 	display: block;
 }
-#submenu{
-	width: 200px;
-	position: absolute;
-	right: auto;
-	padding: -0;
-	margin: 0;
-	left: -30px;
-}
+
 #submenu li{
 	clear: both;
 	width: 160px;
@@ -50,16 +41,25 @@
 	background-color: #78b33d;
 	color: white;
 }
+#submenu{
+	width: 200px;
+	position: absolute;
+	right: auto;
+	padding: -0;
+	margin: 0;
+	left: -30px;
+	display: none;
+}
 #menucon{
 	left:100%;
 	position: absolute;
 	padding: 0;
 	margin: 0px;
 	top: 0;
-}
-#menucon{
 	display: none;
 }
+
+
 #submenu li:hover #menucon{
 	display: block;
 }

@@ -1,7 +1,7 @@
 #menu{
 	widows: 1000px;
 	height: 50px;
-	background-color: #78b33d;
+	background-color: yellow;
 }
 #menu li{
 	list-style: none;
@@ -17,11 +17,11 @@
 	text-decoration: none;
 }
 #menu li:hover a{
-	color: red;
+	color: blue;
 }
 #menu li:hover{
 cursor: pointer;
-background-color: #ccc;
+background-color: green;
 }
 #submenu{
 	display: inline;

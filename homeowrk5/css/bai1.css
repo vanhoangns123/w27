@@ -1,5 +1,5 @@
 body{
-	font-family: Merienda;
+	font-family: time new roman;
 	font-size: 15px;
 	width: 1000px;
 	margin: 0px auto;
@@ -9,12 +9,12 @@ body{
 	height: 100px;
 	
 }
-#main #left{
+ #left{
 	width: 200px;
 	height: 500px;
 	float: left;
 }
-#main #right{
+ #right{
 	width: 800px;
 	height: 500px;
 	float: left;
@@ -32,7 +32,7 @@ body{
 
 }
 #Head ul li{
-	display:block;
+	display:inline-block;
 	padding-left: 10px;
 	padding-top: 20px;
 	margin: 0px 0px 0px 10px;
