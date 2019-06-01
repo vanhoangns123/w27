@@ -7,6 +7,9 @@
 	border-bottom: 0.7px solid;
 
 }
+#content p{
+	text-align: center;
+}
 #head1 #top1 li{
 	text-align: center;
 	margin-left:5px;
@@ -45,22 +48,24 @@
 
 #mainimg{	 
 }
-#image1{
+.image1{
 	width: 25%;
 	display: inline-block;
-	margin-left: 5%;
+	padding-left: 5%;
 }
-#image1 img{
+.image1 img{
 	width: 100%;
 	height: 10%;	 
 }
+
 .color1{
 	color:blue;	 
 	margin-top:1%; 
 }
-#image2{
-	margin-top:2%;
-	margin-left: 5%;
+
+/*#image2{
+	 
+	padding-left: 5%;
 	width: 25%;
 	display: inline-block;
 }
@@ -72,53 +77,51 @@
 }
 
 #image3{
-	margin-left: 5%;
+	padding-left: 5%;
 	width: 25%;
 	display: inline-block;
 
 }
 #image3 img{
-	margin-top:2%;
-	margin-left:  2%; 
+	 
 	width: 100%;
 	height: 10%;
 }
 #image4{
-	margin-left: 5%;
+	padding-left: 5%;
 	width: 25%;
 	display: inline-block;
 
 }
 #image4 img{
-	margin-top:2%;
-	margin-left:  2%; 
+	 
 	width: 100%;
 	height: 10%;
 }
 #image5{
-	margin-left: 5%;
+	padding-left: 5%;
 	width: 25%;
 	display: inline-block;
 
 }
 #image5 img{
-	margin-top:2%;
-	margin-left:  2%; 
+	 
 	width: 100%;
 	height: 10%;
 }
 #image6{
-	margin-left: 5%;
+	padding-left: 5%;
 	width: 25%;
 	display: inline-block;
 
 }
-#image6 img{
-	margin-top:2%;
-	margin-left:  2%; 
+#image6 img{ 
 	width: 100%;
 	height: 10%;
-}
+}*/
+
+
+
 #hex{
 	text-align: center;
 	 padding-left: 5%;
@@ -128,6 +131,8 @@
 	height: 20%;
 
 }
+
+
 #about #text h3{
 	font-size: 20px;
 	color: green;
@@ -179,10 +184,10 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 @media screen and (min-width: 481px) and (max-width: 699px) {
-	#image1{
+	.image1{
 		width: 40%;
 	}
-	#image2{
+	/*#image2{
 		width: 40%;
 	}
 	#image3{
@@ -196,15 +201,15 @@ input[type=submit]:hover {
 	}
 	#image6{
 		width: 40%;
-	}
+	}*/
 
 	
 }
 @media screen and (max-width: 480px) {
-		#image1{
+		.image1{
 		width: 80%;
 		}
-		#image2{
+/*		#image2{
 			width: 80%;
 		}
 		#image3{
@@ -218,9 +223,9 @@ input[type=submit]:hover {
 		}
 		#image6{
 			width: 80%;
-		}
+		}*/
 }
 #ima{
 	width: 40%;
 	float: right;
-}
+}	
