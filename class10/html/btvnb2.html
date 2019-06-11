@@ -32,18 +32,16 @@
 		}
 	</style>
 	<script type="text/javascript">
-		function divao(x){
-			var text=document.getElementsByClassName('changecolor');
-			text.style.color = 'green';
+	 
+		function check(){
+			for(var i = 0; i < document.querySelectorAll('input').length; i++) {
+					document.querySelectorAll('input')[i].checked = true;
+				}
 		}
-		function dira(x){
-			var text=document.getElementsByClassName('changecolor');
-			text.style.color = '#2E9AFE';
-		}
-		function click1(){
-			var texxt=document.getElementsByClassName('changecolor');
-			texxt.
-			
+		function uncheck(){
+			for(var i = 0; i < document.querySelectorAll('input').length; i++) {
+					document.querySelectorAll('input')[i].checked = false;
+				}
 		}
 	</script>
 </head>
@@ -86,9 +84,11 @@
 	</table>
 	
 	 <div id= "bot1">
-	 	<a href="1111" onclick="click1()">checkall</a>
-		<a href="2222"  onclick="click2()">uncheckall</a>	
+	 	<a href="#" onclick="check()">checkall</a>
+		<a href="#"  onclick="uncheck()">uncheckall</a>	
 	 </div>
 
 </body>
 </html>
+
+ 
