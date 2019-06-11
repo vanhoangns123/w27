@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>classwork</title>
+</head>
+<body>
+	<p id="the_p" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quaerat, illo a!</p>
+	<ul>
+		<li class="mb"> ha noi </li>
+		<li class="mb">hai phong</li>
+		<li class="mb"> nam dinh</li>
+	</ul>
+	<span>the span 1</span>
+	<span>the span 2</span>
+	<span>the span 3</span>
+	<input type="button" name="layy theo id" onclick="clickId()" > 
+	<input type="button" name="lay theo class" onclick="clickClass()">
+	<input type="button" name=" thay theo tags" onclick="clickTags()">
+	<script type="text/javascript">
+		function clickId(){
+			var the_p =document.getElementById('the_p');
+			//	alert(the_p.innerHTML);
+				the_p.innerHTML="wed 26aaa";
+		}
+		function clickClass(){
+			var class_mb =document.getElementsByClassName('mb')
+			class_mb[0].style.color='red';
+		}
+		function clickTags(){
+			var class_span=document.getElementsByTagName('span')
+			class_span[0].style.color="blue";
+		}
+
+	</script>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem, modi sunt.</p>
+
+
+</body>
+</html>

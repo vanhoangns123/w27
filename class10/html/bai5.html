@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>doce</title>
+</head>
+<body>
+	<h1>the h1</h1>
+	<p>the p thu 1</p>
+	<p>the p thu 2</p>
+	<input type="button" name="" value="Click me" onclick="myFunction()">
+	<script type="text/javascript">
+		function myFunction(){
+			var h1=document.getElementsByTagName('h1')[0];
+			h1.parentNode.style.background='red';
+			var p=document.getElementsByTagName('p')[0];
+			p.nextElementSibling.style.color='blue';
+			var p2=document.getElementsByTagName('p')[1];
+			p2.previousElementSibling.style.color="yellow";
+		}
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function ClickEvent(){
+			window.location.href="https://google.com";
+		}
+
+		function dichuotvao(x){
+			x.style.width='100px';
+			x.style.height='100px';
+			var text=document.getElementById('text');
+			text.style.color='red';
+		}
+		function dichuotra(x){
+			x.style.width='200px';
+			x.style.width='200px';
+			var text=document.getElementById('text');
+			text.style.color='yellow';
+		}
+		
+
+	</script>
+
+</head>
+<body>
+	<input type="button" value="click me" onclick="ClickEvent()">
+	<img src="https://cdn.tuoitre.vn/thumb_w/980/2019/3/1/bien1-1551437953683272141128.jpg" width="200px" height="200px" alt="" onmouseover="dichuotvao(this)" onmouseout="dichuotra(this)">
+	<p id="text"> 
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+</body>
+</html>

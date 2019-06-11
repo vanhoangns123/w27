@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 1</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#buttontab{
+			width: 600px;
+			height: 600px;
+			background-image: url('../image/anhgonen.jpg');
+			background-image: cover;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		#textbox{
+			width: 600px;
+			height: auto;
+			padding-top: 20px;
+			padding-left: 20px;
+			display: none;
+		}
+		#textbox2{
+			width: 600px;
+			height: auto;
+			padding-top: 20px;
+			padding-left: 20px;
+			display: none;
+		}
+		#textbox3{
+			width: 600px;
+			height: auto;
+			display: none;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function clicktab1(){
+			var text_box = document.getElementById('textbox2')
+			text_box.style.display = "none";
+			var text_box = document.getElementById('textbox3')
+			text_box.style.display = "none";
+			var text_box = document.getElementById('textbox')
+			text_box.style.display = "inline-block";
+	</script>
+</head>
+<body>
+	<div id="buttontab">
+		<input type="button" value="Tab 1" onclick="clicktab1()">
+		<input type="button" value="Tab 2" onclick="clicktab2()">
+		<input type="button" value="Tab 3" onclick="clicktab3()">
+	</div>
+	<div id="textbox">
+		<h2>Section 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi architecto animi, officiis voluptas distinctio debitis corporis earum odit nulla, quia!</p>
+	</div>
+	<div id="textbox2">
+		<h2>Section 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi architecto animi, officiis voluptas distinctio debitis corporis earum odit nulla, quia!</p>
+	</div>
+	<div id="textbox3">
+		<h2>Section 3</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi architecto animi, officiis voluptas distinctio debitis corporis earum odit nulla, quia!</p>
+	</div>
+</body>
+</html>
