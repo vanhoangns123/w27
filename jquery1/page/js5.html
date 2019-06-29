@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>9.2dom element</title>
+</head>
+<body>
+	
+	<div>
+		<input type="text" name="something" value="the" class="wedsite">
+		<input type="text" name="" value="thong ko lay">
+	</div>
+	
+	<script type="text/javascript">
+		ver selector =document.getElementByClassName("wedsite")
+		selector[0].style.border="1px solid red";
+	</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>903 dom html doem css</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+			.red{
+				background: red;
+			}
+
+
+	</style>
+</head>
+<body>
+	<input id="but" type="button" name="" value="clickme" onclick="change()" id="ob">
+
+
+	<p class="la">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini</p>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#but").click(function(){
+				$(".la").toggle('red');
+
+
+			});
+			
+			$(".la").click(function(){
+				$("#but").toggle();
+			})
+			 
+			
+
+
+
+		})
+
+
+
+		// function change(){
+		// 	var ob=getElementById("ob");
+		// 	var type=ob.type;
+		// 	if(type="button"){
+		// 		ob.type='text';
+		// 	}else{
+		// 		ob.type="button";
+		// 	}
+
+
+
+		// }
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

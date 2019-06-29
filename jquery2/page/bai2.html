@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lightbox</title>
+	 
+	<link rel="stylesheet" type="text/css" href="../jquery/lightbox.min.css">
+	<style type="text/css">
+		img{
+			width: 330px;
+			height: 200px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://i-dulich.vnecdn.net/2019/02/26/1-1551149516_680x0.jpg"  data-lightbox="example-1">
+		<img src="https://i-dulich.vnecdn.net/2019/02/26/1-1551149516_680x0.jpg" alt="">
+	</a>
+	<a href="https://i-dulich.vnecdn.net/2019/02/26/1-1551149516_680x0.jpg" data-lightbox="example-1">
+		<img src="https://i-dulich.vnecdn.net/2019/02/26/1-1551149516_680x0.jpg">
+	</a>
+	<a href="https://i-dulich.vnecdn.net/2019/02/26/1-1551149516_680x0.jpg" data-lightbox="example-1">
+		<img src="https://i-dulich.vnecdn.net/2019/02/26/1-1551149516_680x0.jpg">
+	</a>
+	<a href="https://i-dulich.vnecdn.net/2019/02/26/1-1551149516_680x0.jpgs" data-lightbox="example-1" data-title="Optional caption.">
+		<img src="https://i-dulich.vnecdn.net/2019/02/26/1-1551149516_680x0.jpg">
+	</a>
+
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/lightbox.min.js"></script>
+	<script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+		<script type="text/javascript">
+			lightbox.option({
+	      		'resizeDuration': 2000,
+	      		'wrapAround': false,
+	      		'positionFromTop': '25px',
+	      		'maxWidth': '1000px'
+	   		})
+	</script>
+</body>
+</html>

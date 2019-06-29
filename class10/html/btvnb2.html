@@ -43,13 +43,21 @@
 					document.querySelectorAll('input')[i].checked = false;
 				}
 		}
+		function divao(x){
+			var text=document.getElementById('changecolor');
+			 text[0].style.color = 'red';
+		}
+		function dira(x){
+			var text=document.getElementById('changecolor');
+			 text[0].style.color = 'green';
+		}
 	</script>
 </head>
 <body>
 
 	<table id="table">
 		<tr class="changecolor">
-			<th class ="check1"><input  type="checkbox" name=""   onmouseover="divao(this)" onmouseout="dira(this)"></th>
+			<th id ="check1"><input  type="checkbox" name=""   onmouseover="divao(this)" onmouseout="dira(this)"></th>
 			<th>Lorem ipsum dolor sit amet, consectetur  </th>
 		</tr>
 		<tr class="changecolor">
@@ -90,5 +98,8 @@
 
 </body>
 </html>
+
+
+
 
  

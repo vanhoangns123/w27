@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bbai4</title>
+	<script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div style="width:100px ; height:100px; background-color:yellow; ">
+		nohing to say
+	</div>
+
+
+
+	<button id="hide"> hide</button>
+	<button id="show">show</button>
+	<button id="toogle">toogle</button>
+	<button id="fadein">fadein</button>
+	<button id="fadeout"> fadeout</button>
+	<button id="fadeto" >fadeto</button>
+	<button id="fadetoogle">fadetocgle</button>
+
+
+<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$('#hide').click(function(){
+				$('div').hide();
+			});
+			 
+			$('#show').click(function(){
+				$('div').show();
+			});
+			$('#toogle').click(function(){
+				$('div').toggle();
+			});
+
+			$('#fadein').click(function(){
+				$('div').fadeIn(111);
+			});
+			$('#fadeout').click(function(){
+				$('div').fadeOut(123);
+			});
+			$('#fadeto').click(function(){
+				$('div').fadeTo(1);
+			});
+			$('#fadetoogle').click(function(){
+				$('div').fadeToggle(111);
+			})
+
+		});
+	
+
+</script>
+
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#p1").click(function(){
+        $("#but").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">jQuery is fun!!</p>
+
+<button id="but">Click me</button>
+
+</body>
+</html>

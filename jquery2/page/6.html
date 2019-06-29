@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>666</title>
+	<script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div{
+			background-color: red;
+			position: absolute;
+			left:0;
+			width:200px;
+			height:200px;
+		}
+	
+		button{
+			position:absolute;
+			left:0;
+			top:300px;
+		}
+	</style>
+
+
+</head>
+<body>
+		<div>Lorem ipsum dolor sit amet, </div>
+		<button id="btn">animate</button>
+
+		<script type="text/javascript">
+
+				$(document).ready(function(){
+
+					$('#btn').click(function(){
+						$('div').animate({
+							top: '+=20px',
+							left:'+=200px',
+							'font-size': '+=10px'
+
+						});
+
+					});
+
+				});
+		</script>
+
+
+</body>
+</html>

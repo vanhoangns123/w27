@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>55555</title>
+	<script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium repudiandae, dolor dignissimos.</p>
+		
+	</div>
+		<button id="sliceUp" >slice Up</button>
+		<button id="sliceDown" >slice Down</button>
+		<button id="sliceToggle">slice toggle</button>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('#sliceUp').click(function(){
+				$('p').slideUp();
+			});
+			$('#sliceDown').click(function(){
+				$('p').slideDown();
+			});
+			$('#sliceToggle').click(function(){
+				$('p').slideToggle();
+			});
+
+
+
+		});
+	</script>
+	
+
+</body>
+</html>

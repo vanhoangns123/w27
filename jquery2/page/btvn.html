@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
+ 
+    <script type="text/javascript" src="../jquery/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="../jquery/jquery.validate.min.js"></script>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+            width: 80%;
+            margin-left: 10%;
+        }
+        #main_content{
+
+            width:100%;
+            height: 600px;
+        }
+        #header{
+            text-align: center;
+        }
+        #content_1{
+            width: 100%;
+            background-color: #1c7bdb;
+            height: 80px;
+            
+        }
+        #h1{
+            float: left;
+            padding-top: 20px; 
+            padding-left: 20px; 
+        }
+        #span_all{
+            float: right;   
+            
+            size: 30px;
+            padding-top: 30px;
+        }
+        #span_all a{
+
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        #spaceofhead{
+            height: 50px;
+            width: 100%;
+             
+        }
+        #content{
+            width: 100%;
+
+        }
+        #content_side_bar{
+            width: 30%;
+        
+            background-color: #e1e4e8;
+             float: left;
+             
+             
+        }
+        #content_side_bar a{
+            float: left;
+            padding-top: 20px;
+            display:block;
+            text-decoration: none;
+            padding-left: 10px;
+            color:blue;
+            padding-bottom: 20px;
+
+        }
+        #content_main {
+            float: right;
+            width: 69%;
+            height: 600px;
+            
+    
+        }
+        #main_file a{
+        display: inline-block;
+        width: 20%;
+        margin: 2%;
+        padding-top: 20px;   
+        background-color: #e1e4e8;
+        text-decoration: none;
+        height: 40px;
+        }
+        #bot{
+           padding-left: 90%;
+            height: 100px;
+        }
+        #content1{
+            /*padding-left: 15px;
+            float: left;
+           
+            text-align: center;*/
+         display: none;
+             background-color: #e1e4e8;
+        height: : 600px;
+
+        }
+        #content2{
+            display: none;
+        }
+        #all_content{
+            background-color: #e1e4e8;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div id= "header ">
+        <div id="content_1">
+            <h1 id="h1">jQuery steps</h1>
+            
+            <div id="span_all">
+                <a href="">Getting started</a>
+                <a href="" style="color: orange">Example</a>
+                <a href="">Documentation</a>
+                <a href="">Bootgrid <span style="background-color:orange">new</span> </a>
+                <a href="">Blog</a>
+                <a href="">Github</a>
+                <a href="">About</a>  
+            </div>
+        </div>
+
+
+        <div id="spaceofhead"></div>
+    </div>
+
+
+
+    <div>
+        <div id="main_content">
+            <div id="content">
+                <div id="content_side_bar">
+                    <a href="">Basic Example</a>
+                    <a href="">Basic From Example</a>  
+                    <a href="#" id="advane">Advane From Example</a>
+                    <a href="">Dynamix Manputation Example</a>
+                    <a href="">Tabs Example</a>
+                    <a href="">Vertal Step Example</a>
+                    <a href="">Anysc  Content Loading Example</a>
+                    <a href="">Embred Conent Example</a>
+                </div>
+            </div>
+
+            <div id="content_main">
+                <div id="main_file">
+                    <a href="#" id="task1">1.Account</a>        
+                    <a href="#" id="task2">2.Profile</a>
+                    <a href="#" id="task3">3.Warming</a>
+                    <a href="#" id="task4">4.Finish</a>
+                </div>
+
+
+                <div id="all_content">
+                    
+
+                        <form id="form1">
+                            <div id="content1">
+
+                                <h3>Account infomation</h3><br>
+                                <div id="input">
+                                <label style="float: left;">User name *</label><br>
+                                <input id="userName-2" name="userName" type="text" class="required"><br>
+                                <label style="float: left;">Password *</label><br>
+                                <input id="password-2" name="password" type="text" class="required"><br>
+                                <label style="float: left;">Confirm Password *</label><br>
+                                <input id="confirm-2" name="confirm" type="password" class="required"><br>
+
+                                </div>
+                                <input id="but1" type="button" name="" value="togglee">
+                               <input id="but2" type="submit" name="" value="checkk">
+
+                            </div>
+                        </form>
+
+
+                    
+
+                    <div id="content2">
+                        <form id="form2">
+                            <h3>Profile infomation</h3><br>
+                            <label for="name-2">First name *</label><br>
+                            <input id="name-2" name="name" type="text" class="required"><br>
+                            <label for="surname-2">Last name *</label><br>
+                            <input id="surname-2" name="surname" type="text" class="required"><br>
+                            <label for="email-2">Email *</label><br>
+                            <input id="email-2" name="email" type="text" class="required email"><br>
+                            <label for="address-2">Address</label><br>
+                            <input id="address-2" name="address" type="text"><br>
+                            <label for="age-2">Age (The warning step will show up if age is less than 18) *</label><br>
+                            <input id="age-2" name="age" type="text" class="required number"><br>
+
+                        </form>
+                    </div>
+
+                    <div id="content3"></div>
+                    <div id="content4"></div>
+                </div>
+        </div>
+    </div>
+
+        <div id="bot">
+        <div >
+            
+        </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#advane").click(function(){
+                // $("#task1").css("background","red");
+                $("#content1").show();
+            })
+            $("#but1").click(function(){
+                 $("#content1").hide();
+                $("#content2").toggle();
+            })
+            $(document).ready(function() {
+ 
+        //Khi bàn phím được nhấn và thả ra thì sẽ chạy phương thức này
+        $("#form1").validate({
+            rules: {
+                userName: "required",
+                password: "required",
+
+                confirm: {
+                    required: true,
+                    minlength: 2
+                }
+            },
+            messages: {
+                userName: "Vui lòng nhập họ",
+                password: "Vui lòng nhập tên",
+                confirm: {
+                    required: "Vui lòng nhập địa chỉ",
+                    minlength: "Địa chỉ quá ngắn"
+                }
+            }
+        });
+    });
+        })
+        // $(document).ready(function(){
+        //     $("#but2").click(function(){
+        //         $("#task1").css("background","none");
+        //         $("#tesk2").css("background ","red");
+        //         $("#content1").hide();
+        //         $("#content2").show();
+        //     })
+      //  })
+
+    </script>
+</body>
+</html>

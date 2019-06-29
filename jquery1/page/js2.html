@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4js</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<ul id="location">
+		<li>ha noi</li>
+		<li> hai phong</li>
+		<li> nam dinh </li>
+	</ul>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+		$("#location").prepend("<li> quanninh</li>");
+		 
+		$("#location").append("<li> ho chi minh city</li>");
+		$("#location").before("<p> helo world</p>")
+		$("#location").after("<p> gut bye se you again</p>")
+
+		}
+
+			)
+	</script>
+
+</body>
+</html>

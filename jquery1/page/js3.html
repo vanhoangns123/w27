@@ -1,0 +1,79 @@
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai toodsfas</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.color{
+			background-color: blue;
+		}
+		.color2{
+			background: green;
+		}
+	</style>
+</head>
+<body>
+
+	<p id="p_element">Lorem ipsum dolor sit.</p>
+	<div>
+		<p id="div_element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At.</p>
+	</div>
+	<input id="add" type="button" name="" value="add-color">
+	<input id="remove" type="button" name="" value=" remove-color">
+	<input id="toggle" type="button" name="" value="toggle-color">
+	<input id="change" type="button" name="" value="chang-color">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#add").click(function(){
+				$("#p_element").addClass('color');
+			});
+			$("#change").click(function(){
+				$("#div_element").addClass("color2");
+			})
+			$("#remove").click(function(){
+				$("#p_element").removeClass('color');
+			});
+			$("#toggle").click(function(){
+				$("#p_element").toggle('color');
+
+			})
+			
+			
+			
+		})
+	</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>adfads</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.color1{
+			 color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="h1">the h1</h1>
+	<h2 id="h2">the h2</h2>
+	<h3 id="h3">the h33</h3>
+	<h4 id="h4"> the h44</h4>
+	<h5 id="h5">the h55</h5>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#h1").click(function(){
+				$("#h2").hide();
+				$("#h3").addClass("color1");
+			})
+
+		})
+	</script>
+	
+</body>
+</html>

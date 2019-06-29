@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> asdfsdf</title>
+
+	<script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
+
+
+	<style type="text/css">
+		
+
+		.ancestors *{
+			display: block;
+			border: 3px solid ;
+			color: gray;
+			margin: 10px;
+			padding: 10px;
+
+
+		}
+
+	</style>
+	<script type="text/javascript">
+		 $(document).ready(function(){
+		 	 //$('h2').next().css('border-color','red');
+		 	  $('h2').nextAll().css('border-color','red' );
+		 	  // $('h2').nextUntil('h5').css('border-color','red');
+		 	  $('h2').prev().css('border-color','red');
+		 	// $('h2').siblings().css('border-color','red');
+		 	//  $('h2').siblings('h1').css('border-color','red');
+
+		 });
+	</script>
+</head>
+
+
+
+<body class="ancestors">
+	<div class="sib">div
+		 <h1>h1</h1>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h4>h44</h4>
+		<h5>h55</h5>
+
+	</div>
+	
+	
+
+
+</body>
+</html>

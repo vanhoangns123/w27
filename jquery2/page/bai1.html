@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> fddfdfd</title>
+
+	<script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
+
+
+	<style type="text/css">
+		
+
+		.ancestors *{
+			display: block;
+			border: 3px solid ;
+			color: gray;
+			margin: 10px;
+			padding: 10px;
+
+
+		}
+
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $('span').parents('ul').css({'color':'red','border':'3px solid red'});
+			// $('ul').find('span').css('color','red');
+
+
+			$('li').children('span').css('color','red');
+		});
+	</script>
+</head>
+
+
+
+<body class="ancestors">
+	<div>div
+		<ul>ul
+			<li>li
+					<span>span</span>
+			 
+				<span>dfdsf</span>
+			</li>
+		
+
+		</ul>
+	</div>
+	
+
+
+</body>
+</html>

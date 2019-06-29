@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -11,17 +11,18 @@
 		<li class="mb">hai phong</li>
 		<li class="mb"> nam dinh</li>
 	</ul>
-	<span>the span 1</span>
-	<span>the span 2</span>
+	<p>the span 1</p>
+	<p>the span 2</p>
 	<span>the span 3</span>
+
 	<input type="button" name="layy theo id" onclick="clickId()" > 
 	<input type="button" name="lay theo class" onclick="clickClass()">
 	<input type="button" name=" thay theo tags" onclick="clickTags()">
 	<script type="text/javascript">
 		function clickId(){
-			var the_p =document.getElementById('the_p');
+			var the_p1 =document.getElementById('the_p');
 			//	alert(the_p.innerHTML);
-				the_p.innerHTML="wed 26aaa";
+				the_p1.innerHTML="wed 26aaa";
 		}
 		function clickClass(){
 			var class_mb =document.getElementsByClassName('mb')
@@ -29,12 +30,60 @@
 		}
 		function clickTags(){
 			var class_span=document.getElementsByTagName('span')
-			class_span[0].style.color="blue";
+			class_span[0].style.color='blue';
 		}
 
 	</script>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem, modi sunt.</p>
 
 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>êeeee</title>
+</head>
+<body>
+	<p id="p_element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur necessitatibus ratione harum!</p>
+	
+	<ul>
+		<li class="class1">so 1 </li>
+		<li class="class1">so 2</li>
+		<li class="class1">so3</li>
+	</ul>
+
+
+	<span>it iss the passs</span><br>
+	<span>it iss the passs</span><br>
+	<span>it iss the passs</span><br>
+	<span>it iss the passs</span><br>
+	<p>somthing in the last</p>
+
+	<input type="button" name="" placeholder="" onclick="change1()">
+
+	<input type="button" name="" placeholder="" onclick="change2()">
+
+	<input type="button" name="" placeholder="" onclick="change3()">
+
+	<script type="text/javascript">
+
+		function change1(){
+			var  value=document.getElementById('p_element');
+			value.innerHTML="nothing";
+		}
+
+		function change2(){
+			var value1 =document.getElementsByClassName('class1');
+			value1[0].style.color="red";
+		}
+
+		function change3(){
+			var value2=document.getElementsByTagName('span');
+			value2[3].style.color = "green";
+		}
+
+	</script>
 </body>
 </html>

@@ -1,0 +1,268 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery-3.4.1.min.js"></script> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<style>
+		body{
+			background-image: url("background.jpg");
+			background-size: cover;
+			color: white;
+		}
+		h1{
+			font-family: Forte;
+		}
+		.div{
+			width: 100%;
+			height: 70px;
+			background-color: #181D16;
+			border: 1px solid black;
+		}
+		.img{
+			width: 40px;
+			height: 40px;
+			border-radius: 7px;
+			float: left;
+			margin-left: -20px;
+			margin-top: 15px;
+			background-color: #5C8E1A;
+		}
+		.fa{
+			color: #76B721;
+			font-size: 40px;
+		}
+		.txt{
+			width: 80%;
+			float: left;
+			padding-top: 25px;
+			padding-left: 5%;
+			font-size: 20px;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+		.extend{
+			display: block;
+			height: 180px;
+			width: 100%;
+			background-color: #2E392C;
+			border: 1px solid black;
+		}
+		.divopen{
+			display: none;
+			height: 150px;
+			width: 100%;
+			background-color: #2C312C;
+			margin-top: 0;
+			padding-top: 10px;
+			/*border: 1px solid black;*/
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<div style="width: 60%; text-align: left;">
+		<h1>This is a logo</h1>
+	</div>
+	<div style="width: 60%; text-align: center;">
+		<div class="div div1">
+			<div class="panel">
+				<div class="img">
+					<i class="fa" aria-hidden="true"></i>
+					 
+				</div>
+				<div class="txt">First Panel</div>
+			</div>
+		</div>
+		<div class="divopen">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit, quaerat qui sapiente laboriosam, iure nobis. Commodi illum, aliquam ex ea cum labore, architecto explicabo, ratione quas tempore similique vel.</p>
+		</div>
+
+
+
+		<div class="div">
+			<div class="panel">
+				<div class="img">
+					<i class="fa" aria-hidden="true"></i>
+				 
+				</div>
+				<div class="txt">Second Panel</div>
+			</div>
+		</div>
+		<div class="divopen" >
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit, quaerat qui sapiente laboriosam, iure nobis. Commodi illum, aliquam ex ea cum labore, architecto explicabo, ratione quas tempore similique vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, suscipit.</p>
+		</div>
+
+		<div class="div">
+			<div class="panel">
+				<div class="img">
+					<i class="fa" aria-hidden="true"></i>
+				 
+				</div>
+				<div class="txt">Third Panel</div>
+			</div>
+		</div>
+		<div class="divopen" id="div3open">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit, quaerat qui sapiente laboriosam, iure nobis. Commodi illum, aliquam ex ea cum labore, architecto explicabo, ratione quas tempore similique vel.</p>
+		</div>
+
+
+
+		<div class="div">
+			<div class="panel">
+				<div class="img">
+					<i class="fa" aria-hidden="true"></i>
+					
+				</div>
+				<div class="txt">Fourth Panel</div>
+			</div>
+
+		</div>
+		<div class="divopen" >
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit, quaerat qui sapiente laboriosam, iure nobis. Commodi illum, aliquam ex ea cum labore, architecto explicabo, ratione quas tempore similique vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus possimus consequatur nulla dolorem maxime mollitia, dolor quae ratione ipsum perspiciatis esse amet aliquam, eveniet labore ducimus sint harum! Repudiandae quisquam ipsum reprehenderit laborum et inventore, sed est, voluptas natus culpa labore iste illum doloribus neque dolor autem ut deserunt omnis?</p>
+		</div>
+	</div>
+	</center>
+
+	<script type="text/javascript">
+		$(function(){
+			$('.img').click(function(){
+				if ($(this).html() == '<i class="fa"></i>') {
+					$('.img').html('<i class="fa"></i>');
+					$('.divopen').css({'display': 'none'});
+					$(this).html('<i class="fa"></i>');
+					$(this).parent().parent().next().show(500);
+
+				} else{
+					$(this).html('<i class="fa"> 	</i>');
+					$(this).parent().parent().next().hide(500);
+				}
+			});
+		});
+	</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	h1{
+		text-align: center;
+	}
+	.head{
+		background-color: orange;
+		color: white;
+		width: 60%;
+		height: 200px;
+		padding-top: 50px;
+	}
+	.addbox{
+		width: 70%;
+		height: 50px;
+	}
+	.ip{
+		width: 70%;
+		height: 50px;
+		display: inline-block;
+		float: left;
+	}
+	#textbox{
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+	#btn{
+		width: 30%;
+		height: 52px;
+		display: inline-block;
+		float: right;
+		border: 0;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	#content{
+		width: 60%;
+	}
+	td{
+		height: 40px;
+		background-color: #FFE080;
+	}
+	.check{
+		width: 10%;
+	}
+	.content{
+		width: 80%;
+		text-align: left;
+	}
+	.del{
+		width: 10%;
+		text-align: center;
+	}
+	.del:hover{
+		color: red;
+	}
+	.fa-check-circle{
+		display: none;
+		color: green;
+		padding-left: 20px;
+	}
+</style>
+</head>
+<body>
+	<div class="logo">
+		
+	</div>
+	<center>
+		<div class="head">
+			<h1>My to do list</h1>
+
+			<div class="addbox">
+				<div class="ip">
+					<input type="text" name="txt" placeholder="     Title..." id="textbox">
+				</div>
+
+
+				<div class="bt">
+					<button id="btn">Add</button>
+				</div>
+			</div>
+			
+
+
+		</div>
+
+		<div class="list">
+			<table cellspacing="0" id="content">
+				
+			</table>
+		</div>
+	</center>
+	<script>
+		$(function(){
+			$('#btn').click(function() {
+				var input = $('#textbox').val();
+				$('#content').append(
+					`<tr>
+					<td class="check"><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+					<td class="content">` + input + `</td>
+					<td class="del"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+					</tr>`
+					)
+				$('#textbox').val("")
+			});
+			$('body').on('click', '.del', function() {
+				$(this).parent().remove();
+			});
+			$('body').on('click', '.content', function() {
+				$(this).css('textDecoration', "line-through");
+				$('.fa-check-circle').css('display', 'block');
+			});
+		});
+	</script>
+</body>
+</html>
